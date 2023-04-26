@@ -14,14 +14,14 @@ Each IEM has the following data:
 - ANC Capability
 - Sensitivity (dB/mW)
 - Impedance (Ω)
-- # of Drivers
+- \# of Drivers
 - Driver Configuration
 - Connection Type
 - Microphone
 - IP Rating	
 - Measurement(s)
 - Misc Measurement(s) (DSP Modes)
-- # of Measurements
+- \# of Measurements
 - Contributing Reviewers
 
 From which the following can be calculated:
