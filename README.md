@@ -8,41 +8,41 @@ Victor Villumsen Bergien | TCG780 | tcg780@alumni.ku.dk
 The data used to create this database has been mainly sourced from squig.link, a website used by reviewers to
 host their IEM frequency response measurements. The following reviewers squig.links have been used to scrape data:
 
-Acho Reviews
-Aftersound
-Animagus
-Audio Review News
-Bedrock Reviews
-Bry Audio Reviews
-CammyFi
-Elise Audio
-EPLV
-Gizaudio
-Harpo
-Hawaii Bad Boy
-Hi End Portable
-Hobby Talk
-ianfann
-IEM World
-Jacstone
-kr0mka
-Kurin
-Melatonin
-nymz
-Paul Wasabi
-Recode
-Rikuduo Goku
-Shortbus
-Side Salad Audio
-Super* Review
-tgx78
-Vortex Reviews
-VSG
-wdym
+Acho Reviews, 
+Aftersound, 
+Animagus, 
+Audio Review News, 
+Bedrock Reviews, 
+Bry Audio Reviews, 
+CammyFi, 
+Elise Audio, 
+EPLV, 
+Gizaudio, 
+Harpo, 
+Hawaii Bad Boy, 
+Hi End Portable, 
+Hobby Talk, 
+ianfann, 
+IEM World, 
+Jacstone, 
+kr0mka, 
+Kurin, 
+Melatonin, 
+nymz, 
+Paul Wasabi, 
+Recode, 
+Rikuduo Goku, 
+Shortbus, 
+Side Salad Audio, 
+Super* Review, 
+tgx78, 
+Vortex Reviews, 
+VSG, 
+wdym, 
 Akros
 
 With plans to add:
-freeryder05
+freeryder05, 
 Precogvision
 
 ## Introduction:
