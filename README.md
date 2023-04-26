@@ -74,7 +74,7 @@ Each IEM has the following data:
 From which the following can be calculated:
 
 - Average Measurement
-- Preference % (The adherence the IEM's FR measurements has to a given target as a %)
+- Preference % (The adherence the IEM's FR measurements has to a given target, as a %)
 - Average  Error (dB)
 - Slope of Error
 - STDEV of Error
