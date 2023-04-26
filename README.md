@@ -48,6 +48,9 @@ Precogvision
 This is made possible as each reviewers squig.link site, hosts their IEM frequency response measurements at
 <reviewer's name>.squig.link/data, from which it is possible to scrape and download the raw frequency response measurements.
 
+Please note that the only data that was scraped from these sites are the frequency response measurements, and the names of the IEM's themselves.
+All other data as been synthesized by curating a database containing the IEM names, from which the remaining data was manually collected by researching the IEM's individually
+
 ## Introduction:
 This project consists of a comprehensive (possibly the largest) database of IEM's (In-Ear Monitors).
 Each IEM has the following data:
