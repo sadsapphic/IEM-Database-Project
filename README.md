@@ -1,7 +1,7 @@
 # IEM-Database-Project
 Databases and Information Systems (NDAB21010U) Project
 
-Credits:
+### Credits:
 Victor Villumsen Bergien | TCG780 | tcg780@alumni.ku.dk
 
 Introduction:
