@@ -92,6 +92,13 @@ Where the preference % can be used to rank the IEM's within the database based o
 
 Plan to allow user-uploadable targets.
 
+Write in future:
+- Reference other IEM databases: Crinacle, Banbeu, etc.
+- None offer functionality to display preference %
+- Explain where idea for preference % came from (Harman research)
+- Mention measurement rig differences (IEC711, Gras, BK 5128, etc)
+- Explore the idea of grouping measurements by reviewer (so one reviewer does not saturate the average for a given IEM)
+
 ## Dependencies:
 
 ## Installation:
