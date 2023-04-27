@@ -47,11 +47,11 @@ Precogvision
 
 ### Links to find reviewers whose measurements were used:
 
-<reviewer_1> | link_1 | ... | link_n
-<reviewer_2> | link_1 | ... | link_n
-...
-<reviewer_n-1> | link_1 | ... | link_n
-<reviewer_n> | link_1 | ... | link_n
+\n<reviewer_1> | link_1 | ... | link_n
+\n<reviewer_2> | link_1 | ... | link_n
+\n...
+\n<reviewer_n-1> | link_1 | ... | link_n
+\n<reviewer_n> | link_1 | ... | link_n
 
 This is made possible as each reviewers squig.link site, hosts their IEM frequency response measurements at
 <reviewer's name>.squig.link/data, from which it is possible to scrape and download the raw frequency response measurements.
