@@ -1,8 +1,11 @@
 # IEM Database Project
-Databases and Information Systems (NDAB21010U) Project
+Databases and Information Systems (NDAB21010U) Project by Group 22 & Group 23
 
 ## Credits:
-Victor Villumsen Bergien | TCG780 | tcg780@alumni.ku.dk
+Victor Villumsen Bergien | TCG780 | tcg780@alumni.ku.dk | Group 22 <br />
+Mateo Anusic | djz709 | djz709@alumni.ku.dk  | Group 23 <br />
+Emil Thorlund | gpv679 | gpv679@alumni.ku.dk  | Group 22 <br />
+Lucas A. Rosing | qgc922 | qgc922@alumni.ku.dk | Group 23 
 
 ### Data Sources:
 The data used to create this database has been mainly sourced from squig.link, a website used by reviewers to
