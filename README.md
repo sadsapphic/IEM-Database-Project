@@ -92,7 +92,7 @@ Where the preference % can be used to rank the IEM's within the database based o
 
 Plan to allow user-uploadable targets.
 
-Write in future:
+## Write in future:
 - Reference other IEM databases: Crinacle, Banbeu, etc.
 - None offer functionality to display preference %
 - Explain where idea for preference % came from (Harman research)
