@@ -47,11 +47,11 @@ Precogvision
 
 ### Links to find reviewers whose measurements were used:
 
-\n<reviewer_1> | link_1 | ... | link_n
-\n<reviewer_2> | link_1 | ... | link_n
-\n...
-\n<reviewer_n-1> | link_1 | ... | link_n
-\n<reviewer_n> | link_1 | ... | link_n
+<reviewer_1> | link_1 | ... | link_n
+<reviewer_2> | link_1 | ... | link_n
+...
+<reviewer_n-1> | link_1 | ... | link_n
+<reviewer_n> | link_1 | ... | link_n
 
 This is made possible as each reviewers squig.link site, hosts their IEM frequency response measurements at
 <reviewer's name>.squig.link/data, from which it is possible to scrape and download the raw frequency response measurements.
@@ -87,6 +87,10 @@ From which the following can be calculated:
 - Slope of Error
 - STDEV of Error
 - Variance
+
+Where the preference % can be used to rank the IEM's within the database based off of their audio quality performance, thus applying data to rank a traditionally subjective matter. As each person has their own HRTF (Head Related Transfer Function), despite this, it is still possible to make judgements on audio performance based off an average preference targets, such as the Harman targets. Though the database does also include a plethora of other targets to match the users preference.
+
+Plan to allow user-uploadable targets.
 
 ## Dependencies:
 
