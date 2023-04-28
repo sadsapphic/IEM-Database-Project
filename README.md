@@ -99,7 +99,7 @@ Plan to allow user-uploadable targets.
 - Reference other IEM databases: Crinacle, Banbeu, etc.
 - None offer functionality to display preference %
 - Explain where idea for preference % came from (Harman research)
-- Mention measurement rig differences (IEC711, Gras, BK 5128, etc)
+- Mention measurement rig differences (IEC711, Gras 43AG, B&K 5128, etc)
 - Explore the idea of grouping measurements by reviewer (so one reviewer does not saturate the average for a given IEM)
 - Mention difficulty caused by difference reviewers using different naming schemes, resulting in multiple names for the same IEM.
 
