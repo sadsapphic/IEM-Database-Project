@@ -819,7 +819,7 @@
 'Letshouer D13' : [shuoer d13, letshuoer d13]
 'Letshouer EJ07' : [shuoer ej07, letshuoer ej07]
 'Letshouer EJ07M' : [shuoer ej07m, , letshuoer ej07m, 07m, 07m_retune, ej07_custom, ej07_custom1, ej07m, ej_sb, letshuoer ej07]
-'Letshouer 'Kinda Lava' EJ07M' : [shuoer ej07klc, letshuoer kl, shuoer ej07kl, shuoer ej07kln, shuoer ej07m kinda lava, shuoer ej07m kl, shuoer kinda lava]
+'Letshouer 'Kinda Lava' EJ07M' : [shuoer ej07klc, letshuoer kl, shuoer ej07kl, shuoer ej07kln, shuoer ej07m kinda lava, shuoer ej07m kl, shuoer kinda lava, letshouer ej07m lava, letshouer ej07m kinda lava, letshuoer ej07m lava, letshuoer ej07m kinda lava]
 'Letshouer EJ09' : [shuoer ej09, letshuoer ej09]
 'Letshouer Galileo' : [shuoer galileo, letshuoerxgizaudio galileo, letshuoer x gizaudio galileo, g, galileo retail, letshuoer galileo]
 'Letshouer S12' : [shuoer s12, s12, resolve letshouer s12 gras, letshuoer s12, oratory shouer s12, shouer s12]
