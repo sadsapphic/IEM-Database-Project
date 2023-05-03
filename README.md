@@ -108,3 +108,37 @@ Plan to allow user-uploadable targets.
 ## Installation:
 
 ## Note:
+
+# To Do List:
+- Scrape squig.link for all IEM measurements and download them locally
+- The measurements should be sorted into folders based off what reviewers produced the measurements
+- The .txt files are to be converted into .csv files with only X,Y columns. All excess data is to be discarded
+- These .csv files should be grouped together in the dataframe (or similar) where all measurements for a specific model of IEM are grouped together. Target csv files should be identified and grouped seperately.
+- For IEM’s with multiple measurements, calculate average frequency response
+- Now that each IEM only has one corresponding measurement, calculate the Predicted Preference %
+	Update the current preference % function to include the following functionality:
+	- Variance
+- Create a dataframe to store the following information:
+- Brand, IEM, Preference %, Avg Measurement, Contributing Measurements, # of Measurements, Contributing Reviewers, Avg  Error (dB), Slope of Error, STDEV of Error, Variance, Best Preference %, Worst Preference %
+- Sort this dataframe based off the Predicted Preference %
+- Generate plots of highest ranking IEM's, these plots should include the same information as in the dataframe
+
+### Short-term To Do:
+- Fix the # of measurements in the dataframe/create new logic to count the # of contributing .csv files used to derive an average
+- Fix the spikes seen at 20Hz in some of the average frequency response plots
+- Create a function to calculate the best and worst preference % so that it can be stored in the dataframe
+- Similarly, in addition to using the average measurement to calculate standard deviation and variance, use all contributing measurements to calculate standard deviation and variance as well
+- Add the following reviewer(s) to the list of reviewers: progvision
+
+### Long-term To Do:
+- Create (at least) three seperate dataframes, one for the main information, one for the average measurements and one for the reviewers
+- Export these dataframes as .csv files, and import these into SQL
+- Create web app to interact with said SQL database
+	This web app could have the following functionality:
+	- Allow the user to select either a target or IEM to get information about the preference %
+	- Ability to show individual measurements instead of the average (useful in cases where an IEM has different modes/reviewers using different eartips etc)
+	- Ability to plot the X,Y values for the measurements
+
+### Possibly To Do:
+- Gather additional information for each IEM's, such as: Price ($), ANC, Sensitivity dB/mW, Impedance (Ω), # of Drivers, Driver Configuration, Connection Type, Microphone, IP Rating
+- Create compensation curve for each reviewer to normalize measurements based off their rig

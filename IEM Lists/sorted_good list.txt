@@ -328,7 +328,7 @@
 'Dressage 6+1' : [dressage 6+1]
 'DROP Plus' : [massdrop plus, mdplus, oratory massdrop plus universal iem]
 'DROP x Dan Clark Audio Aeon Closed X' : [drop + dan clark audio aeon closed x]
-'DROP x Etymotic ERX' : [etymotic erx]
+'DROP x Etymotic ERX' : [etymotic erx, drop x etymotic erx]
 'DROP x Hifiman Bolt' : [hifiman bolt]
 'DROP x JVC FWX1' : [jvc fwx1]
 'DROP x Noble Universe' : [massdropxnoble univ]
