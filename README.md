@@ -119,7 +119,7 @@ Plan to allow user-uploadable targets.
 - Update the current preference % function to include the following functionality:
 	- Variance
 - Create a dataframe to store the following information:
-- Brand, IEM, Preference %, Avg Measurement, Contributing Measurements, # of Measurements, Contributing Reviewers, Avg  Error (dB), Slope of Error, STDEV of Error, Variance, Best Preference %, Worst Preference %
+	- Brand, IEM, Preference %, Avg Measurement, Contributing Measurements, # of Measurements, Contributing Reviewers, Avg  Error (dB), Slope of Error, STDEV of Error, Variance, Best Preference %, Worst Preference %
 - Sort this dataframe based off the Predicted Preference %
 - Generate plots of highest ranking IEM's, these plots should include the same information as in the dataframe
 
@@ -140,5 +140,6 @@ Plan to allow user-uploadable targets.
 	- Ability to plot the X,Y values for the measurements
 
 ### Possibly To Do:
-- Gather additional information for each IEM's, such as: Price ($), ANC, Sensitivity dB/mW, Impedance (Ω), # of Drivers, Driver Configuration, Connection Type, Microphone, IP Rating
+- Gather additional information for each IEM's, such as:
+	- Price ($), ANC, Sensitivity dB/mW, Impedance (Ω), # of Drivers, Driver Configuration, Connection Type, Microphone, IP Rating
 - Create compensation curve for each reviewer to normalize measurements based off their rig
