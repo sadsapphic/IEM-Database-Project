@@ -115,14 +115,14 @@ Where the preference % can be used to rank the IEM's within the database based o
 - ~~The measurements should be sorted into folders based off what reviewers produced the measurements~~
 - ~~The .txt files are to be converted into .csv files with only X,Y columns. All excess data is to be discarded~~
 - ~~These .csv files should be grouped together in the dataframe (or similar) where all measurements for a specific model of IEM are grouped together.~~ Target csv files should be identified and grouped seperately. (There are still some targets that need to be grouped correctly)
-- For IEM’s with multiple measurements, calculate average frequency response
-- Now that each IEM only has one corresponding measurement, calculate the Predicted Preference %
+- ~~For IEM’s with multiple measurements, calculate average frequency response~~
+- ~~Now that each IEM only has one corresponding measurement, calculate the Predicted Preference %~~
 - Update the current preference % function to include the following functionality:
 	- Variance
 - Create a dataframe to store the following information:
-	- Brand, IEM, Preference %, Avg Measurement, Contributing Measurements, # of Measurements, Contributing Reviewers, Avg  Error (dB), Slope of Error, STDEV of Error, Variance, Best Preference %, Worst Preference %
-- Sort this dataframe based off the Predicted Preference %
-- Generate plots of highest ranking IEM's, these plots should include the same information as in the dataframe
+	- Brand, ~~IEM~~, ~~Preference %~~, Avg Measurement, Contributing Measurements, # of Measurements, Contributing Reviewers, ~~Avg  Error (dB)~~, ~~Slope of Error~~, ~~Avg STDEV of Error~~, Avg Variance, Best Preference %, Worst Preference %, STDEV of Error for all contributing measurements, Variance for all contributing measurements
+- ~~Sort this dataframe based off the Predicted Preference %~~
+- ~~Generate plots of highest ranking IEM's, these plots should include the same information as in the dataframe~~
 - SQL compatible .csv files
 - SQL Database
 - Web app
