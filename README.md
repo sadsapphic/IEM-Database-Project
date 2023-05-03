@@ -124,6 +124,7 @@ Plan to allow user-uploadable targets.
 - Generate plots of highest ranking IEM's, these plots should include the same information as in the dataframe
 
 ### Short-term To Do:
+- Update process.ipynb or create a full pipeline.ipynb which incorperates the new method of grouping IEM's using the manually labeled list
 - Fix the # of measurements in the dataframe/create new logic to count the # of contributing .csv files used to derive an average
 - Fix the spikes seen at 20Hz in some of the average frequency response plots
 - Create a function to calculate the best and worst preference % so that it can be stored in the dataframe
