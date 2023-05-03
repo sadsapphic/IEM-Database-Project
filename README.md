@@ -110,13 +110,13 @@ Plan to allow user-uploadable targets.
 ## Note:
 
 # To Do List:
-- Scrape squig.link for all IEM measurements and download them locally
-- The measurements should be sorted into folders based off what reviewers produced the measurements
-- The .txt files are to be converted into .csv files with only X,Y columns. All excess data is to be discarded
-- These .csv files should be grouped together in the dataframe (or similar) where all measurements for a specific model of IEM are grouped together. Target csv files should be identified and grouped seperately.
+- ~~Scrape squig.link for all IEM measurements and download them locally~~
+- ~~The measurements should be sorted into folders based off what reviewers produced the measurements~~
+- ~~The .txt files are to be converted into .csv files with only X,Y columns. All excess data is to be discarded~~
+- ~~These .csv files should be grouped together in the dataframe (or similar) where all measurements for a specific model of IEM are grouped together.~~ Target csv files should be identified and grouped seperately. (There are still some targets that need to be grouped correctly)
 - For IEM’s with multiple measurements, calculate average frequency response
 - Now that each IEM only has one corresponding measurement, calculate the Predicted Preference %
-	Update the current preference % function to include the following functionality:
+- Update the current preference % function to include the following functionality:
 	- Variance
 - Create a dataframe to store the following information:
 - Brand, IEM, Preference %, Avg Measurement, Contributing Measurements, # of Measurements, Contributing Reviewers, Avg  Error (dB), Slope of Error, STDEV of Error, Variance, Best Preference %, Worst Preference %
