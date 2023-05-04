@@ -131,6 +131,7 @@ Where the preference % can be used to rank the IEM's within the database based o
 - Complete the manually labeled IEM list, so that 100% of the measurement files are being grouped
 - Update process.ipynb or create a full pipeline.ipynb which incorperates the new method of grouping IEM's using the manually labeled list
 	- After a full pipeline is established, clean up the repository and remove redundant files.
+- Fix non-average measurements being saved when saving the average measurements locally.
 - Fix the # of measurements in the dataframe/create new logic to count the # of contributing .csv files used to derive an average
 - Fix the spikes seen at 20Hz in some of the average frequency response plots
 - Create a function to calculate the best and worst preference % so that it can be stored in the dataframe
