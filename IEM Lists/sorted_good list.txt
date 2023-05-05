@@ -922,7 +922,7 @@
 'Moondrop Stardust' : [moondrop stardust]
 'Moondrop Starfield' : [oratory moondrop starfield, moondrop  starfield, moondrop starfield]
 'Moondrop Stellaris' : [moondrop stellaris]
-'Moondrop Variations' : [broken variations, moondrop variations]
+'Moondrop Variations' : [broken variations, moondrop variations, variations]
 'Hobby Talk Moondrop Variations 220 Ohm' : [moondrop variations 220ohm]
 'Moondrop Venus' : [moondrop venus]
 'Moondrop Void' : [moondrop void]
