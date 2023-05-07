@@ -42,9 +42,7 @@ tgx78,
 Vortex Reviews, 
 VSG, 
 wdym, 
-Akros
-
-With plans to add:
+Akros,
 freeryder05, 
 Precogvision
 
@@ -136,7 +134,7 @@ Where the preference % can be used to rank the IEM's within the database based o
 - Fix the spikes seen at 20Hz in some of the average frequency response plots
 - Create a function to calculate the best and worst preference % so that it can be stored in the dataframe
 - Similarly, in addition to using the average measurement to calculate standard deviation and variance, use all contributing measurements to calculate standard deviation and variance as well
-- Add the following reviewer(s) to the list of reviewers: progvision, freeryder05
+- ~~Add the following reviewer(s) to the list of reviewers: progvision, freeryder05~~
 	- After adding these reviewers, ensure that their IEM measurements are being grouped properly. If any measurements are not being grouped, add these files the the manually labeled list of IEMs
 
 ### Long-term To Do:
