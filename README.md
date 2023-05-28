@@ -151,3 +151,6 @@ Where the preference % can be used to rank the IEM's within the database based o
 - Gather additional information for each IEM's, such as:
 	- Price ($), ANC, Sensitivity dB/mW, Impedance (Ω), # of Drivers, Driver Configuration, Connection Type, Microphone, IP Rating
 - Create compensation curve for each reviewer to normalize measurements based off their rig
+- Add functionality to identify the different dB levels in the measurements and further group the measurements based off of that
+- Add functionality that identifies miscellaneous information about the measurements, such as if a reviewer measures the IEM using non-stock eartips or uses an impedance adapter.
+	- This is useful as such modifications to the IEM are not representative of what the stock product may sound like, hence they alter the average measurement.
