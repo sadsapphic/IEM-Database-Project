@@ -115,10 +115,10 @@ Where the preference % can be used to rank the IEM's within the database based o
 - ~~These .csv files should be grouped together in the dataframe (or similar) where all measurements for a specific model of IEM are grouped together.~~ Target csv files should be identified and grouped seperately. (There are still some targets that need to be grouped correctly)
 - ~~For IEM’s with multiple measurements, calculate average frequency response~~
 - ~~Now that each IEM only has one corresponding measurement, calculate the Predicted Preference %~~
-- Update the current preference % function to include the following functionality:
-	- Variance
+- ~~Update the current preference % function to include the following functionality:
+	- Variance~~
 - Create a dataframe to store the following information:
-	- Brand, ~~IEM~~, ~~Preference %~~, Avg Measurement, Contributing Measurements, # of Measurements, Contributing Reviewers, ~~Avg  Error (dB)~~, ~~Slope of Error~~, ~~Avg STDEV of Error~~, Avg Variance, Best Preference %, Worst Preference %, STDEV of Error for all contributing measurements, Variance for all contributing measurements
+	- Brand, ~~IEM~~, ~~Preference %~~, ~~Avg Measurement~~, ~~Contributing Measurements, # of Measurements, Contributing Reviewers, Avg  Error (dB)~~, ~~Slope of Error~~, ~~Avg STDEV of Error~~, Avg Variance, ~~Best Preference %, Worst Preference %~~, STDEV of Error for all contributing measurements, Variance for all contributing measurements
 - ~~Sort this dataframe based off the Predicted Preference %~~
 - ~~Generate plots of highest ranking IEM's, these plots should include the same information as in the dataframe~~
 - SQL compatible .csv files
