@@ -136,6 +136,7 @@ Where the preference % can be used to rank the IEM's within the database based o
 - Similarly, in addition to using the average measurement to calculate standard deviation and variance, use all contributing measurements to calculate standard deviation and variance as well
 - ~~Add the following reviewer(s) to the list of reviewers: progvision, freeryder05~~
 	- After adding these reviewers, ensure that their IEM measurements are being grouped properly. If any measurements are not being grouped, add these files the the manually labeled list of IEMs
+- Add ankramutt.squig.link
 
 ### Long-term To Do:
 - Create (at least) three seperate dataframes, one for the main information, one for the average measurements and one for the reviewers
