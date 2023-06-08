@@ -44,7 +44,8 @@ VSG,
 wdym, 
 Akros,
 freeryder05, 
-Precogvision
+Precogvision,
+ankramutt
 
 This is made possible as each reviewers squig.link site, hosts their IEM frequency response measurements at
 <reviewer's name>.squig.link/data, from which it is possible to scrape and download the raw frequency response measurements.
