@@ -93,14 +93,14 @@ From which the following can be calculated:
 Where the preference % can be used to rank the IEM's within the database based off of their audio quality performance, thus applying data to rank a traditionally subjective matter. As each person has their own HRTF (Head Related Transfer Function), despite this, it is still possible to make judgements on audio performance based off an average preference targets, such as the Harman targets. Though the database does also include a plethora of other targets to match the users preference.
 
 ## Dependencies:
-Python (version 3.6 or higher)
-psycopg2
-pandas
-matplotlib
-numpy
-scipy
-requests
-beautifulsoup4
+- Python (version 3.6 or higher)
+- psycopg2
+- pandas
+- matplotlib
+- numpy
+- scipy
+- requests
+- beautifulsoup4
 
 
 You can install the required Python packages using pip. Run the following command to install the dependencies:
