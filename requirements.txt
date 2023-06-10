@@ -1,0 +1,9 @@
+Flask
+psycopg2-binary
+flask-login
+Werkzeug
+Flask-WTF
+pandas
+matplotlib
+numpy
+scipy
