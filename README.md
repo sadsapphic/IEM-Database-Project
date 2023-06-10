@@ -1,174 +1,133 @@
-# IEM Database Project
-Databases and Information Systems (NDAB21010U) Project by Group 22 & Group 23
+# IEM Database Prototype
 
-## Credits:
+## Introduction
+
+### About the project
+This webapp is a prototype for *potentially* the largest publically availible database of in ear monitors, IEM, measurements. The goal is to create a platform from which a user can view the average measurement of a given IEM, as well as to see the average predicted preference percentage of said IEM. Which can be used as a rough metric to guage how well a user may enjoy said IEM. Additionally, a user may also compare the measurements of two IEMs, and see the difference between the two. This can be used to see how similar two IEMs are, and how much they differ in sound. To visualize the IEM measurements, frequency response plots are created, so that the user can see the measurements in a more intuitive way.
+
+To achieve this, a pipeline is created with the following steps:
+
+1. Scraping the IEM measurements and coverting to .csv files with only X and Y columns.
+2. Grouping the .csv files so that all the measurements for a given IEM are grouped together. In order to achieve this, a manually labeled list of IEM's and their respective name variations is used.
+3. Calculating the average measurements, saving them as new .csv files and adding them to a dataframe.
+4. Calculating the predicted preference percentage for a given target. 
+5. Plotting the top 10 IEM's according to their average predicted preference percentage.
+
+It is worth noting that the aforementioned pipeline for data scraping and calculating average predicted preference percentage was created before the database project was assigned, and it was modified to create .csv files which are ingested into PostgreSQL to create the database which is used for the webapp. Lastly, we feel that it is worth noting the scale of the data which has been collected and used for this project, and the difficulty which was introduced as a result. The data consists of 1400+ unique IEM models, ~12000 Frequency response measurements and 6M+ individual datapoints, excluding those calculated for the average measurements.
+
+The difficulty introduced was as a result of the very nature of this project which was that, naturally every reviewer has their own testing methodologies and naming conventions. This lack of a consistent naming convetion meant that there was no way to automatically group the measurements for a given IEM together. This meant that a manually labeled list of IEM's and their respective name variations had to be created. This list consists of 1400+ IEMs and their respective name variations, and was created by manually going through the measurements and grouping them together. This was a very time consuming process, and was the most time consuming part of the project. However, it was necessary to create a consistent naming convention, and to group the measurements together. The list is not perfect, and there are still some IEM's which are not grouped together, however, our aim is to improve the list over time, and to make it as complete as possible.
+
+### E/R Diagram
+
+### Features
+The webapp allows for the following functionality:
+1. Create a new user account.
+2. Login to an existing user account.
+3. Delete an existing user account.
+4. Update an existing user's password.
+5. Searching for an IEM by name.
+6. Viewing the average measurement and indivdual measurements of an IEM compared to the chosen target.
+7. Viewing the average predicted preference percentage as well as other metrics such as: average error, STDEV, Variance etc. of an IEM compared to the chosen target.
+8. Comparing the measurements of two IEMs.
+9. Viewing the reviewers who created the measurements used for the given IEM or comparison.
+
+### Credits
+The webapp was created by the following students:
 Victor Villumsen Bergien | TCG780 | tcg780@alumni.ku.dk | Group 22 <br />
-Mateo Anusic | DJZ709 | djz709@alumni.ku.dk  | Group 23 <br />
-Emil Thorlund | GPV679 | gpv679@alumni.ku.dk  | Group 22 <br />
-Lucas A. Rosing | QGC922 | qgc922@alumni.ku.dk | Group 23 
+Mateo Anusic | DJZ709 | djz709@alumni.ku.dk | Group 23 <br />
+Emil Thorlund | GPV679 | gpv679@alumni.ku.dk | Group 22 <br />
+Lucas A. Rosing | QGC922 | qgc922@alumni.ku.dk | Group 23
 
-### Data Sources:
+### Acknowledgements & Data Sources
 The data used to create this database has been mainly sourced from squig.link, a website used by reviewers to
 host their IEM frequency response measurements. The following reviewers squig.links have been used to scrape data:
 
-- Acho Reviews, 
-- Aftersound, 
-- Animagus, 
-- Audio Review News, 
-- Bedrock Reviews, 
-- Bry Audio Reviews, 
-- CammyFi, 
-- Elise Audio, 
-- EPLV, 
-- Gizaudio, 
-- Harpo, 
-- Hawaii Bad Boy, 
-- Hi End Portable, 
-- Hobby Talk, 
-- ianfann, 
-- IEM World, 
-- Jacstone, 
-- kr0mka, 
-- Kurin, 
-- Melatonin, 
-- nymz, 
-- Paul Wasabi,  
-- Recode, 
-- Rikuduo Goku, 
-- Shortbus, 
-- Side Salad Audio, 
-- Super* Review, 
-- tgx78, 
-- Vortex Reviews, 
-- VSG, 
-- wdym, 
-- Akros,
-- freeryder05, 
-- Precogvision,
+- Acho Reviews
+- Aftersound
+- Animagus
 - ankramutt
+- Audio Review News
+- Bedrock Reviews
+- Bry Audio Reviews
+- CammyFi
+- Elise Audio
+- EPLV
+- Gizaudio
+- Harpo
+- Hawaii Bad Boy
+- Hi End Portable
+- Hobby Talk
+- ianfann
+- IEM World
+- Jacstone
+- kr0mka
+- Kurin
+- Melatonin
+- nymz
+- Paul Wasabi
+- Recode
+- Rikuduo Goku
+- Shortbus
+- Side Salad Audio
+- Super* Review
+- tgx78
+- Vortex Reviews
+- VSG
+- wdym
+- Akros
+- freeryder05
+- Precogvision
 
 This is made possible as each reviewers squig.link site, hosts their IEM frequency response measurements at
 <reviewer's name>.squig.link/data, from which it is possible to scrape and download the raw frequency response measurements.
 
-Please note that the only data that was scraped from these sites are the frequency response measurements, and naturally, the names of the IEM's themselves.
-All other data as been synthesized by curating a database containing the IEM names, from which the remaining data was manually collected by researching the IEM's individually. Though the database only includes entries for IEM's whose measurements are publically avalible, as it is seen as the most important datapoint per IEM.
+Please note that the only data that was scraped from these sites are the frequency response measurements, and naturally, the names of the IEM's themselves. Though the database only includes entries for IEM's whose measurements are publically avalible, as it is seen as the most important datapoint per IEM.
 
-### Links to find reviewers whose measurements were used:
+## Usage
 
-<reviewer_1> | link_1 | ... | link_n <br />
-<reviewer_2> | link_1 | ... | link_n <br />
-... <br />
-<reviewer_n-1> | link_1 | ... | link_n <br />
-<reviewer_n> | link_1 | ... | link_n
+### How to Compile
 
-## Introduction:
-This project consists of a comprehensive (possibly the largest) database of IEM's (In-Ear Monitors).
-Each IEM has the following data:
+Before running the application, the database must be set up as follows:
 
-- IEM Name
-- Brand
-- Price ($)
-- ANC Capability
-- Sensitivity (dB/mW)
-- Impedance (Ω)
-- \# of Drivers
-- Driver Configuration
-- Connection Type
-- Microphone
-- IP Rating	
-- Measurement(s)
-- Misc Measurement(s) (DSP Modes)
-- \# of Measurements
-- Contributing Reviewers
+1. Run `schema_IEM.sql`. This file is used to set up the database schema. In this script, ensure that the correct file paths to the corresponding .csv files are set. The .csv files should contain the data that will populate the database.
 
-From which the following can be calculated:
+2. Run `schema.ins.sql`. This SQL script should insert data into the database. Again, ensure that the paths to your data files are correct. Both `schema.iem` and `schema_ins.sql` scripts should be executed within your database command line interface or GUI.
 
-- Average Measurement
-- Preference % (The adherence the IEM's FR measurements has to a given target, as a %)
-- Average  Error (dB)
-- Slope of Error
-- STDEV of Error
-- Variance
+3. Update the connection details in both `plots.py` and `__init__.py` files. These files contain the database connection strings. They need to have the correct details (database server, database name, user, password, etc.) to be able to connect to your database.
 
-Where the preference % can be used to rank the IEM's within the database based off of their audio quality performance, thus applying data to rank a traditionally subjective matter. As each person has their own HRTF (Head Related Transfer Function), despite this, it is still possible to make judgements on audio performance based off an average preference targets, such as the Harman targets. Though the database does also include a plethora of other targets to match the users preference.
+### How to Run
 
-## Dependencies:
-- Python (version 3.6 or higher)
-- psycopg2
-- pandas
-- matplotlib
-- numpy
-- scipy
-- requests
-- beautifulsoup4
-
-
-You can install the required Python packages using pip. Run the following command to install the dependencies:
+The application can be executed by running the `main.py` file from your terminal or command prompt:
 
 ```
-pip install psycopg2 pandas matplotlib numpy scipy requests beautifulsoup4
+python main.py
 ```
 
+After running the `main.py` script, your local server will start, and the web application will be accessible via your preferred web browser at the localhost (usually `http://127.0.0.1:5000/`). Here is a brief guide on how to interact with the application:
 
-## Installation:
+### How to Interact
 
-## Note:
+1. **Create a New User Account**: On the sign-up page, fill in the requested information to create a new user account. It's necessary to be logged in to view and interact with the content.
 
-# To Do List:
+2. **Login to an Existing Account**: Visit the login page to access your existing account. Simply input your account credentials to log in.
 
-### Write in future:
-- Reference other IEM databases: Crinacle, Banbeu, etc.
-- None offer functionality to display preference %
-- Explain where idea for preference % came from (Harman research)
-- Mention measurement rig differences (IEC711, Gras 43AG, B&K 5128, etc)
-- Explore the idea of grouping measurements by reviewer (so one reviewer does not saturate the average for a given IEM)
-- Mention difficulty caused by difference reviewers using different naming schemes, resulting in multiple names for the same IEM.
+3. **Search for an IEM**: Once you're logged in, you can search for an IEM by its name using the search bar on the home page. Examples of searchable IEMs include "Apple AirPods Pro 2", "Moondrop Variations", "Truthear HEXA", and more. The search feature is case-insensitive and will provide a frequency response plot, a predicted preference percentage, and other associated data for the IEMs if the name is typed in correctly.
 
-### Roadmap
+4. **Compare IEMs**: Optionally, after an initial search for an IEM, you can use the comparison search bar to compare one IEM against another. This comparison will display a plot comparing the frequency response of the two selected IEMs.
 
-- ~~Scrape squig.link for all IEM measurements and download them locally~~
-- ~~The measurements should be sorted into folders based off what reviewers produced the measurements~~
-- ~~The .txt files are to be converted into .csv files with only X,Y columns. All excess data is to be discarded~~
-- ~~These .csv files should be grouped together in the dataframe (or similar) where all measurements for a specific model of IEM are grouped together.~~ Target csv files should be identified and grouped seperately. (There are still some targets that need to be grouped correctly)
-- ~~For IEM’s with multiple measurements, calculate average frequency response~~
-- ~~Now that each IEM only has one corresponding measurement, calculate the Predicted Preference %~~
-- ~~Update the current preference % function to include the following functionality:
-	- Variance~~
-- Create a dataframe to store the following information:
-	- Brand, ~~IEM~~, ~~Preference %~~, ~~Avg Measurement~~, ~~Contributing Measurements, # of Measurements, Contributing Reviewers, Avg  Error (dB)~~, ~~Slope of Error~~, ~~Avg STDEV of Error~~, Avg Variance, ~~Best Preference %, Worst Preference %~~, STDEV of Error for all contributing measurements, Variance for all contributing measurements
-- ~~Sort this dataframe based off the Predicted Preference %~~
-- ~~Generate plots of highest ranking IEM's, these plots should include the same information as in the dataframe~~
-- SQL compatible .csv files
-- SQL Database
-- Web app
+5. **Change User Password**: Navigate to the change password page to update an existing user's password. Remember, this is only possible if you're logged into the user account whose password you wish to change. After changing the password, try logging out and logging back in with the new password to ensure the changes have been applied.
 
-### Short-term To Do:
-- Complete the manually labeled IEM list, so that 100% of the measurement files are being grouped
-- Update process.ipynb or create a full pipeline.ipynb which incorperates the new method of grouping IEM's using the manually labeled list
-	- After a full pipeline is established, clean up the repository and remove redundant files.
-- Fix non-average measurements being saved when saving the average measurements locally.
-- Fix the # of measurements in the dataframe/create new logic to count the # of contributing .csv files used to derive an average
-- Fix the spikes seen at 20Hz in some of the average frequency response plots
-- Create a function to calculate the best and worst preference % so that it can be stored in the dataframe
-- Similarly, in addition to using the average measurement to calculate standard deviation and variance, use all contributing measurements to calculate standard deviation and variance as well
-- ~~Add the following reviewer(s) to the list of reviewers: progvision, freeryder05~~
-	- After adding these reviewers, ensure that their IEM measurements are being grouped properly. If any measurements are not being grouped, add these files the the manually labeled list of IEMs
-- Add ankramutt.squig.link
+6. **Delete an Account**: To delete an existing user account, visit the login page. Please note that this action can only be performed by the user who wishes to delete their own account.
 
-### Long-term To Do:
-- Create (at least) three seperate dataframes, one for the main information, one for the average measurements and one for the reviewers
-- Export these dataframes as .csv files, and import these into SQL
-- Create web app to interact with said SQL database
-	This web app could have the following functionality:
-	- Allow the user to select either a target or IEM to get information about the preference %
-	- Ability to show individual measurements instead of the average (useful in cases where an IEM has different modes/reviewers using different eartips etc)
-	- Ability to plot the X,Y values for the measurements
-	- Perhaps allow users to upload their own targets/IEM measurements, from which a predicted preference % can be calculated
+### Requirements:
+Run the code below to install the necessary modules.
 
-### Possibly To Do:
-- Gather additional information for each IEM's, such as:
-	- Price ($), ANC, Sensitivity dB/mW, Impedance (Ω), # of Drivers, Driver Configuration, Connection Type, Microphone, IP Rating
-- Create compensation curve for each reviewer to normalize measurements based off their rig
-- Add functionality to identify the different dB levels in the measurements and further group the measurements based off of that
-- Add functionality that identifies miscellaneous information about the measurements, such as if a reviewer measures the IEM using non-stock eartips or uses an impedance adapter.
-	- This is useful as such modifications to the IEM are not representative of what the stock product may sound like, hence they alter the average measurement.
+```
+pip install -r requirements.txt
+```
+
+The modules are listed in the requirements.txt file.
+
+## Notes
+
+The target chosen to calculate average predicted preference from is a modified diffuse field target. In which a -1.0dB/octave downward facing slope is applied as well as the addition of a Harman bass shelf below 200Hz. The justification for use of such a target is that it mimics the preference frequency response of speakers in ideal listening conditions. The bass shelf is added to compensate for the lack of a subwoofer, as Harman research shows that the average listener prefers an additional 9-12dB of subbass.

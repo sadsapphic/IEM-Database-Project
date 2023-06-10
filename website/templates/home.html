@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %}IEM Database{% endblock %}
+
+{% block content %}
+
+<h1 style="text-align: center; padding-bottom: 20px;">IEM Database</h1>
+<form method="POST" id="searchForm">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <div class="d-flex">
+            {{ form.search_term(class="form-control", placeholder="Example: Apple AirPods Pro") }}
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+        <div class="d-flex" id="compareDiv" style="display: none; padding-top: 5px;">
+            {% if show_compare_search %}
+            {{ form.compare_term(class="form-control", placeholder="Compare (Optional)") }}
+            {% endif %}
+        </div>
+    </div>
+</form>
+
+<script>
+document.getElementById('searchForm').addEventListener('submit', function() {
+    document.getElementById('compareDiv').style.display = 'block';
+});
+</script>
+
+<body> 
+    {% if plot_file %}
+    <div style="text-align: center; padding-top: 20px;">
+        <img src="{{ url_for('static', filename=plot_file) }}" alt="plot" style="max-width: 100%;">
+    </div>
+    {% endif %}
+</body>
+
+{% if search_results %}
+
+<div style="padding-top: 20px;">
+    <h2>Search Results:</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>IEM Name</th>
+                <th># of files</th>
+                <th>Average Pref. %</th>
+                <th>Avg. Error</th>
+                <th>Slope of Error</th>
+                <th>STDEV</th>
+                <th>Variance</th>
+                <th>Highest Pref. %</th>
+                <th>Lowest Pref. %</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in search_results %}
+            <tr>
+                {% for column in result %}
+                <td>
+                    {% if column is number %}
+                        {{ column|round(3) }}
+                    {% else %}
+                        {{ column }}
+                    {% endif %}
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+{% if contributors %}
+
+<h2>Contributors:</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Contributor</th>
+            <th>Credit</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for contributor in contributors %}
+        <tr>
+            <td>{{ contributor[0] }}</td>
+            <td>{{ contributor[1] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+{% endblock %}
