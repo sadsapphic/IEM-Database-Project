@@ -32,7 +32,7 @@ The webapp allows for the following functionality:
 9. Viewing the reviewers who created the measurements used for the given IEM or comparison.
 
 ### Credits
-The webapp was created by the following students:
+The webapp was created by the following students: <br />
 Victor Villumsen Bergien | TCG780 | tcg780@alumni.ku.dk | Group 22 <br />
 Mateo Anusic | DJZ709 | djz709@alumni.ku.dk | Group 23 <br />
 Emil Thorlund | GPV679 | gpv679@alumni.ku.dk | Group 22 <br />
@@ -89,11 +89,15 @@ Please note that the only data that was scraped from these sites are the frequen
 
 Before running the application, the database must be set up as follows:
 
-1. Run `schema_IEM.sql`. This file is used to set up the database schema. In this script, ensure that the correct file paths to the corresponding .csv files are set. The .csv files should contain the data that will populate the database.
+1. Uncompress `avg_measurement_data.7z` and `measurement_data.7z` and place the resulting `avg_measurement_data.csv` and `measurement_data.csv` files into the `website/data/csv` directory alongside the other .csv files. These files contain necessary data to populate the database.
 
-2. Run `schema.ins.sql`. This SQL script should insert data into the database. Again, ensure that the paths to your data files are correct. Both `schema.iem` and `schema_ins.sql` scripts should be executed within your database command line interface or GUI.
+2. Run `schema_IEM.sql`. This file is used to set up the database schema. In this script, ensure that the correct file paths to the corresponding .csv files are set.
 
-3. Update the connection details in both `plots.py` and `__init__.py` files. These files contain the database connection strings. They need to have the correct details (database server, database name, user, password, etc.) to be able to connect to your database.
+3. Run `schema_ins.sql`. This SQL script should insert data into the database. Again, ensure that the paths to your data files are correct. Both `schema_IEM.sql` and `schema_ins.sql` scripts should be executed within your database command line interface or GUI.
+
+4. Update the connection details in both `plots.py` and `__init__.py` files. These files contain the database connection strings. They need to have the correct details (database server, database name, user, password, etc.) to be able to connect to your database.
+
+After these steps, your database should be set up correctly and the application is ready to be run.
 
 ### How to Run
 
