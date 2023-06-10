@@ -32,7 +32,7 @@ The webapp allows for the following functionality:
 9. Viewing the reviewers who created the measurements used for the given IEM or comparison.
 
 ### Credits
-The webapp was created by the following students:
+The webapp was created by the following students: <br />
 Victor Villumsen Bergien | TCG780 | tcg780@alumni.ku.dk | Group 22 <br />
 Mateo Anusic | DJZ709 | djz709@alumni.ku.dk | Group 23 <br />
 Emil Thorlund | GPV679 | gpv679@alumni.ku.dk | Group 22 <br />
