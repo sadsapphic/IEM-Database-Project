@@ -3,7 +3,7 @@
 ## Introduction
 
 ### About the project
-This webapp is a prototype for *potentially* the largest publically availible database of in ear monitors, IEM, measurements. The goal is to create a platform from which a user can view the average measurement of a given IEM, as well as to see the average predicted preference percentage of said IEM. Which can be used as a rough metric to guage how well a user may enjoy said IEM. Additionally, a user may also compare the measurements of two IEMs, and see the difference between the two. This can be used to see how similar two IEMs are, and how much they differ in sound. To visualize the IEM measurements, frequency response plots are created, so that the user can see the measurements in a more intuitive way.
+This webapp is a prototype for *potentially* the largest publically availible database of in ear monitor, IEM, measurements. The goal is to create a platform from which a user can view the average measurement of a given IEM, as well as to see the average predicted preference percentage of said IEM. Which can be used as a rough metric to guage how well a user may enjoy said IEM. Additionally, a user may also compare the measurements of two IEMs, and see the difference between the two. This can be used to see how similar two IEMs are, and how much they differ in sound. To visualize the IEM measurements, frequency response plots are created, so that the user can see the measurements in a more intuitive way.
 
 To achieve this, a pipeline is created with the following steps:
 
