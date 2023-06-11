@@ -1,9 +1,3 @@
-DELETE FROM measurement_data;
-DELETE FROM contributors;
-DELETE FROM avg_measurement_data;
-DELETE FROM main;
-
-
 COPY Main(IEM_name, num_of_files, preference_pct, average_error_dB, slope_of_error, STDEV_of_error, variance, highest_Preference_pct, lowest_preference_pct )
 FROM '/tmp/Main.csv' 
 DELIMITER ',' 
@@ -28,6 +22,3 @@ COPY target(X, Y)
 FROM '/tmp/target.csv' 
 DELIMITER ',' 
 CSV HEADER;
-
-
-

@@ -1,14 +1,3 @@
-DELETE FROM measurement_data;
-DELETE FROM contributors;
-DELETE FROM avg_measurement_data;
-DELETE FROM main;
-
-DROP TABLE IF EXISTS measurement_data;
-DROP TABLE IF EXISTS avg_measurement_data CASCADE;
-DROP TABLE IF EXISTS contributors CASCADE;
-DROP TABLE IF EXISTS main CASCADE;
-
-
 DROP TABLE IF EXISTS main; 
 
 CREATE TABLE IF NOT EXISTS main(
