@@ -25,4 +25,21 @@
       <br />
       <button type="submit" class="btn btn-primary">Login</button>
     </form>
+    <form method="POST" action="{{ url_for('auth.delete_user') }}">
+      <h3 align="center">Delete Account</h3>
+      <div class="form-group">
+          <label for="password">Confirm Password</label>
+          <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Enter password to confirm deletion"
+          />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-danger">Delete Account</button>
+  </form>
     {% endblock %}
+
+  

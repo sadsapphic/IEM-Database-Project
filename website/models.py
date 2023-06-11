@@ -41,7 +41,7 @@ class User(UserMixin):
         conn = current_app.config['DATABASE_CONNECTION']
         cur = current_app.config['DATABASE_CURSOR']
 
-        cur.execute("SELECT * FROM users WHERE id = %s", (user_id,))
+        cur.execute("SELECT * FROM Users WHERE id = %s", (user_id,))
         user_data = cur.fetchone()
         if user_data:
             user = User(id=user_data[0], email=user_data[1], password=user_data[2], first_name=user_data[3])
@@ -52,7 +52,22 @@ class User(UserMixin):
     def get_id(self):
         return self.id
 
+    def delete(self):
+        conn = current_app.config['DATABASE_CONNECTION']
+        cur = current_app.config['DATABASE_CURSOR']
+        cur.execute(
+        "DELETE FROM Users WHERE id = %s", (self.id,)
+        )
+        conn.commit()
 
+    @staticmethod
+    def update(self):
+        current_app.config['DATABASE_CURSOR'].execute("""
+            UPDATE users
+            SET password = %s
+            WHERE id = %s
+            """, (self.password, self.id))
+        current_app.config['DATABASE_CONNECTION'].commit()
 
 
 
