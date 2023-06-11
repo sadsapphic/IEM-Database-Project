@@ -62,25 +62,8 @@ All other data as been synthesized by curating a database containing the IEM nam
 
 ## Introduction:
 This project consists of a comprehensive (possibly the largest) database of IEM's (In-Ear Monitors).
-Each IEM has the following data:
 
-- IEM Name
-- Brand
-- Price ($)
-- ANC Capability
-- Sensitivity (dB/mW)
-- Impedance (Ω)
-- \# of Drivers
-- Driver Configuration
-- Connection Type
-- Microphone
-- IP Rating	
-- Measurement(s)
-- Misc Measurement(s) (DSP Modes)
-- \# of Measurements
-- Contributing Reviewers
-
-From which the following can be calculated:
+Which the following can be calculated from:
 
 - Average Measurement
 - Preference % (The adherence the IEM's FR measurements has to a given target, as a %)
@@ -151,3 +134,14 @@ Where the preference % can be used to rank the IEM's within the database based o
 - Gather additional information for each IEM's, such as:
 	- Price ($), ANC, Sensitivity dB/mW, Impedance (Ω), # of Drivers, Driver Configuration, Connection Type, Microphone, IP Rating
 - Create compensation curve for each reviewer to normalize measurements based off their rig
+- Brand
+- Price ($)
+- ANC Capability
+- Sensitivity (dB/mW)
+- Impedance (Ω)
+- \# of Drivers
+- Driver Configuration
+- Connection Type
+- Microphone
+- IP Rating	
+- Misc Measurement(s) (DSP Modes)
