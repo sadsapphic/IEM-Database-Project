@@ -19,6 +19,8 @@ The difficulty introduced was as a result of the very nature of this project whi
 
 ### E/R Diagram
 
+![E/R Diagram](https://github.com/sadsapphic/IEM-Database-Project/blob/main/ER_diagram.png?raw=true)
+
 ### Features
 The webapp allows for the following functionality:
 1. Create a new user account.
