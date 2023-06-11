@@ -89,7 +89,7 @@ Please note that the only data that was scraped from these sites are the frequen
 
 Before running the application, the database must be set up as follows:
 
-1. Uncompress `avg_measurement_data.7z` and `measurement_data.7z` and place the resulting `avg_measurement_data.csv` and `measurement_data.csv` files into the `website/data/csv` directory alongside the other .csv files. These files contain necessary data to populate the database.
+1. Uncompress `website/data/avg_measurement_data.7z` and `website/data/measurement_data.7z` and place the resulting `avg_measurement_data.csv` and `measurement_data.csv` files into the `website/data/csv` directory alongside the other .csv files. These files contain necessary data to populate the database.
 
 2. Run `schema_IEM.sql`. This file is used to set up the database schema. In this script, ensure that the correct file paths to the corresponding .csv files are set.
 
